@@ -1,0 +1,75 @@
+ <!-- Okta Sign in Widget CSS -->
+<link href="https://ok1static.oktacdn.com/assets/js/sdk/okta-signin-widget/1.4.0/css/okta-sign-in.min.css" type="text/css" rel="stylesheet">
+<link href="https://ok1static.oktacdn.com/assets/js/sdk/okta-signin-widget/1.4.0/css/okta-theme.css" type="text/css" rel="stylesheet">
+<!-- Okta Sign in Widget -->
+<style>
+body {
+    background-image: url("images/background.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.center {
+    margin: auto;
+    width: 45%;
+    padding: 10px;
+}
+</style>
+
+<div id="okta-sign-in" class="auth-container main-container no-beacon">
+            <div class="okta-sign-in-header auth-header"> <img src="images/LOGO.png" class="auth-org-logo">
+                <div data-type="beacon-container" class="beacon-container"></div>
+            </div>
+            <div class="auth-content">
+                <div class="auth-content-inner">
+                    <div class="primary-auth">
+                            <form data-se="o-form" id="form16" class="primary-auth-form o-form o-form-edit-mode">
+                                <div data-se="o-form-content" class="o-form-content o-form-theme clearfix">
+                                    <h2 data-se="o-form-head" class="okta-form-title o-form-head">Register Now</h2>
+                                    <div class="o-form-error-container" data-se="o-form-error-container"></div>
+                                    <div class="o-form-fieldset-container" data-se="o-form-fieldset-container">
+                                        <div data-se="o-form-fieldset" class="o-form-fieldset o-form-label-top">
+                                            <div data-se="o-form-input-container" class="o-form-input"><span data-se="o-form-input-username" class="o-form-input-name-username o-form-control okta-form-input-field input-fix">	      	        	          <span class="input-tooltip icon form-help-16" data-hasqtip="0"></span> <span class="icon input-icon person-16-gray"></span>
+                                                <input type="text" placeholder="First Name" name="firstName" id="input25" value="" autocomplete="off" ng-model="fname" ng-required> </span>
+                                            </div>
+                                        </div>
+                                        <div data-se="o-form-fieldset" class="o-form-fieldset o-form-label-top">
+                                            <div data-se="o-form-input-container" class="o-form-input">
+                                                <span data-se="o-form-input-username" class="o-form-input-name-username o-form-control okta-form-input-field input-fix">
+                                                    <span class="input-tooltip icon form-help-16" data-hasqtip="0"></span>
+                                                    <span class="icon input-icon person-16-gray"></span>
+                                                    <input type="text" placeholder="Last Name" name="lastName" id="input25" value="" autocomplete="off" ng-model="lname" ng-required>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div data-se="o-form-fieldset" class="o-form-fieldset o-form-label-top">
+                                            <div data-se="o-form-input-container" class="o-form-input">
+                                                <span data-se="o-form-input-username" class="o-form-input-name-username o-form-control okta-form-input-field input-fix">
+                                                    <span class="input-tooltip icon form-help-16" data-hasqtip="0"></span>
+                                                    <span class="icon input-icon person-16-gray"></span>
+                                                    <input type="text" placeholder="Email" name="Email" id="input25" value="" autocomplete="off" ng-model="email" ng-required>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div data-se="o-form-fieldset" class="o-form-fieldset o-form-label-top">
+                                            <div data-se="o-form-input-container" class="o-form-input">
+                                                <span data-se="o-form-input-password" class="o-form-input-name-password o-form-control okta-form-input-field input-fix">
+                                                    <span class="input-tooltip icon form-help-16" data-hasqtip="1"></span>
+                                                    <span class="icon input-icon remote-lock-16"></span>
+                                                    <input type="password" placeholder="Password" name="password" id="input32" value="" autocomplete="off" ng-model="password" ng-required>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="o-form-button-bar">
+                                    <input class="button button-primary" type="button" value="Sign Up" data-type="save" ng-click="createUser()" >
+                                </div>
+                            </form>
+                            <div class="auth-footer">
+                                <a href="" ng-click="returnToLogin()">Return To Login?</a>	      
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>

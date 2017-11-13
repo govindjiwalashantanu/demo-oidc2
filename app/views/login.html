@@ -1,0 +1,38 @@
+<!-- Okta Sign in Widget CSS -->
+ <!--<link href="https://ok1static.oktacdn.com/assets/js/sdk/okta-signin-widget/1.9.0/css/okta-sign-in.min.css" type="text/css" rel="stylesheet">-->
+ <link rel="stylesheet" href="okta-sign-in.min.css">
+<link href="https://ok1static.oktacdn.com/assets/js/sdk/okta-signin-widget/1.9.0/css/okta-theme.css" type="text/css" rel="stylesheet">-->
+<!-- Okta Sign in Widget -->
+<style>
+body {
+    background-image: url("images/background.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.center {
+    margin: auto;
+    width: 45%;
+    padding: 10px;
+}
+</style>
+<div id="okta-sign-in" class="auth-container main-container no-beacon">
+            <div class="okta-sign-in-header auth-header"> <img src="images/LOGO.png" class="auth-org-logo">
+                <div data-type="beacon-container" class="beacon-container"></div>
+            </div>
+            <div class="auth-content">
+                <div class="auth-content-inner">
+                    <div class="primary-auth">
+                            <my-widget>
+                                <div class="o-form-button-bar">
+                                    <input class="button button-primary" type="button" value="Login" data-type="save" ng-click="login()" ng-show="!widget" >
+                                </div>
+                                <div class="auth-footer">
+                                    <a href="#/register" >Register Now?</a>
+                                </div>
+                                <div id="okta-login-container"></div>
+                            </my-widget>
+                    </div>
+                </div>
+            </div>
+</div>

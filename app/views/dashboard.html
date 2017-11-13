@@ -1,0 +1,55 @@
+<!--<link href="/assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />-->
+<style>
+body {
+    background-image: url("images/background.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+</style>
+
+<div id="wrapper">
+    <header class="header-user-dropdown navbar-fixed-top">
+
+        <div class="header-limiter">
+            <h1 style="padding-left: 50px"><img height="50px" width="150px" src="images/LOGO.png"></h1>
+
+            <!--<nav>
+                <a href="#">Overview</a>
+                <a href="#">Surveys</a>
+                <a href="#">Reports</a>
+                <a href="#">Roles <span class="header-new-feature">new</span></a>
+            </nav>-->
+
+
+            <div class="header-user-menu">
+                <span >{{token.claims.name}}</span>
+
+                <ul>
+                    <li><a href="#">Settings</a></li>
+                    <!--<li><a href="#">Payments</a></li>-->
+                    <li><a href="#" ng-click="signout()" class="highlight">Logout</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </header>
+    <br><br><br><br>
+        <div class="row" ng-if="token">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-3" ng-repeat="app in userApps | filter:{credentialsSetup:true}">
+                        <div style="background-color: beige; text-align: center; vertical-align: middle; height:110px; padding: 25px 5px 5px 5px; margin:15px; opacity: 0.8">
+                            <a href="{{app.linkUrl}}"><img src="{{app.logoUrl}}" height="45" width="90"><br><span>{{app.label}}</span></a>
+                        </div>   <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</div>
+<div ng-if="!token">
+  <br />
+  <h3> Please <a href="#/login"> Sign in to continue</a></h3>
+</div>
